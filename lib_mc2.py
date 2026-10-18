@@ -25,3 +25,15 @@ def to_ansi_123(msg: str) -> str:
             ansi_msg += msg[cursor_pos]
         cursor_pos += 1
     return ansi_msg
+
+
+"""
+30: Gray
+31: Red
+32: Green
+33: Yellow
+34: Blue
+35: Pink
+36: Cyan
+37: White
+"""

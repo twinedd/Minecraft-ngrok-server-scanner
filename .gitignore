@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+server_database.json
+server_database.json.*.tmp
+*.log
+.publish-repo/
