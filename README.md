@@ -64,7 +64,7 @@ UI text is English. Discord timestamps use the viewer's locale. Previously sent 
 
 ## Scanning and persistence
 
-Each pass checks ports **10000–29999** on hosts **1–7.tcp.eu.ngrok.io**: 140,000 endpoints, processed by 13 worker threads with a 0.3-second query timeout. One coordinator creates each pass after all workers finish. There is currently no global requests-per-second limit or pause between passes. Use only where you have permission to scan and respect the provider's limits.
+Each pass checks ports **10000–29999** on hosts **1–7.tcp.eu.ngrok.io**: 140,000 endpoints, processed by 13 worker threads with a 0.3-second query timeout.
 
 `server_database.json` is created beside the script and is excluded from Git. Failed checks mark existing records unavailable without deleting them. **Last seen** is the latest successful reply, not the latest attempt. Legacy records without an availability flag remain hidden until checked successfully.
 
